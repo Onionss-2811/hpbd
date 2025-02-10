@@ -148,7 +148,7 @@ body {
     transform: translateY(50px);
     opacity: 0;
     visibility: hidden;
-    animation: txtTranslateY .3s var(--t) forwards;
+    animation: txtTranslateY .5s var(--t) forwards;
 }
 @keyframes txtTranslateY{
     100%{
@@ -198,7 +198,7 @@ body {
     opacity: 0;
     visibility: hidden;
     width: 0px;
-    animation: dateOfBirth 3s 5s forwards;
+    animation: dateOfBirth 5s 9s forwards;
 }
 @keyframes dateOfBirth{
     20%,40%{
@@ -502,11 +502,11 @@ body {
     text-align: center;
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
 }
 .title__letter .fa-solid{
     margin-left: 5px;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 .letter__border .letter .content__letter{
     position: relative;
@@ -604,4 +604,77 @@ body {
 }
 #mewmew.animationOp{
     animation: opacityHeart 1s 1s forwards;
+}
+
+@media only screen and (max-width: 1000px) {
+    .content{
+        padding-top: 0rem;
+        align-items: self-start;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .title .hat{
+        right: -35px;
+        scale: 0.7;
+    }
+    .date__of__birth, .name{
+        margin-top: 10px;
+    }
+    #btn__letter{
+        margin-top: 10px;
+    }
+    .left{
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    .right{
+        margin-left: 10%;
+    }
+    .smiley__icon {
+        left: 450px;
+    }
+    .decorate_bottom {
+        bottom: -200px;
+    }
+    .content .right .image {
+        width: 350px;
+        height: 350px;
+    }
+    .name {
+        padding: 0px;
+        margin-left: 8%;
+        margin-bottom: 8%;
+    }
+    .box__letter .letter__border {
+        width: 85%;
+        height: 380px;
+    }
+    .content__letter .left #heart__letter {
+        opacity: 0;
+        width: 75%;
+    }
+    .letter__border .letter {
+        padding-top: 0px;
+    }
+    .letter__border .letter .content__letter {
+        padding-top: 0rem;
+        padding-bottom: 80px;
+    }
+    .letter__border .letter .content__letter .left {
+        padding: 0rem;
+        width: 35%;
+    }
+    .letter__border .letter .content__letter .right {
+        margin-left: 0%;
+        width: 65%;
+    }
+    .content__letter .right .love__img {
+        right: -35px;
+        top: -100px;
+        scale: 0.6;
+    }
+    .content__letter .right .text__letter {
+        margin-top: 25px;
+    }
 }
