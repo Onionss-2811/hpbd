@@ -679,5 +679,7 @@ body {
     }
     .content__letter .right .text__letter {
         margin-top: 25px;
+    #wrapper{
+        overflow: auto;
     }
 }
